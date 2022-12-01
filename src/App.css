@@ -4,14 +4,20 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body{
+  background: url('./images/background1.jpg') center/ cover no-repeat scroll;
+}
+
 .wrapper{
-  max-width: 1200px;
-  margin: 0 auto;
+  background: rgba(0, 0, 0, .3);
+  min-height: 650px;
 }
 
 .header{
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, .5);
   padding: 10px 50px;
+  border: none;
+  color: #fff;
 }
 
 .header__row{
@@ -19,17 +25,16 @@
   justify-content: space-between;
 }
 
-.header__img{
-  width: 100px;
-}
 
 .form-element{
-  padding: 5px 30px;
+  padding: 5px;
+  margin-right: 40px;
   font-weight: 700;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fff;
 
 }
 
@@ -38,6 +43,7 @@
   height: 25px;
   cursor: pointer;
   margin-left: 5px;
+  color: #fff;
 }
 
 .row{
@@ -59,18 +65,27 @@
   padding: 20px;
 }
 
+form{ 
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 5px;
+}
+
 .form label{
   display: block;
-  margin: 5px;
+  margin: 10px 20px;
   font-weight: bold;
 }
 
 .form input{
   padding: 5px;
+  color: #fff;
   border: none;
   outline: none;
   border-bottom: 1px solid grey;
-  width: 99%;
+  width: 90%;
+  background: transparent;
+  margin-left: 20px;
 }
 
 button{
@@ -80,7 +95,10 @@ button{
   text-align: center;
   cursor: pointer;
   font-weight: 700;
+  background: rgba(0, 0, 0, .8);
   border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .form button:hover{

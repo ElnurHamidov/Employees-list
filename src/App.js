@@ -48,8 +48,8 @@ class App extends React.Component {
           return e;
         }else{
           let a=obj;
-          obj.id=id;
-          return obj;
+          a.id=id;
+          return a;
         }
 
       }
@@ -61,10 +61,14 @@ class App extends React.Component {
 
   render(){
   return (
-    <div className='wrapper'>
-      <Header />
-      <Employees remove={this.removeAll} add={this.onAdd} workers={this.state.employees} delete={this.onDelete} edit={this.onEdit} />
-    </div>
+    <>
+    <Header />
+      <div className='wrapper'>
+        <div className="container">
+            <Employees remove={this.removeAll} add={this.onAdd} workers={this.state.employees} delete={this.onDelete} edit={this.onEdit} />
+        </div>
+      </div>
+    </>
   );
 }
 }

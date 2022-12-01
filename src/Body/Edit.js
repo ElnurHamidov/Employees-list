@@ -13,11 +13,11 @@ class Edit extends React.Component{
             <div className='form'>
                 <form action="#">
                     <label htmlFor='name'>Name</label>
-                    <input type="text" id='name' ref={this.id1}/>
+                    <input defaultValue={this.props.com.name} type="text" id='name' ref={this.id1}/>
                     <label htmlFor="surname">Surname</label>
-                    <input type="text" id='surname' ref={this.id2}/>
+                    <input defaultValue={this.props.com.surname} type="text" id='surname' ref={this.id2}/>
                     <label htmlFor="age">Age</label>
-                    <input type="number" id='age' ref={this.id3}/>
+                    <input defaultValue={this.props.com.age} type="number" id='age' ref={this.id3}/>
                     <button type='button' onClick={() => {
                         if(this.id1.current.value && this.id2.current.value && this.id3.current.value){
                         this.props.edit(this.props.id, {

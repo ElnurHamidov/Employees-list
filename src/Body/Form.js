@@ -31,7 +31,7 @@ class Form extends React.Component{
                 </div>
             </div>
             <div>
-                {this.state.click && <Edit onClose={this.close} edit={this.props.edit} id={this.props.workers.id}/>}
+                {this.state.click && <Edit com={this.props.workers} onClose={this.close} edit={this.props.edit} id={this.props.workers.id}/>}
             </div>
             </>
         );
