@@ -100,7 +100,7 @@ class App extends React.Component {
               <a
                 target="_blank" rel="noopener noreferrer"
                 className="btn btn-link btn-floating btn-lg text-dark m-1"
-                href="linkedin.com/in/elnur-hamidov-685737216"
+                href="https://www.linkedin.com/in/elnur-hamidov-685737216/"
                 role="button"
                 data-mdb-ripple-color="dark"
                 ><i className="fab fa-linkedin"><AiFillLinkedin className="icon"/></i
