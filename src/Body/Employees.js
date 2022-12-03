@@ -6,9 +6,13 @@ class Employees extends React.Component{
 
     render(){
         return(
-            <div className='body__row'>
-                <Forms remove={this.props.remove} workers={this.props.workers} delete={this.props.delete} edit={this.props.edit}/>
-                <Add add={this.props.add} />
+            <div className='row'>
+                <div className="col-md-7">
+                    <Forms remove={this.props.remove} workers={this.props.workers} delete={this.props.delete} edit={this.props.edit}/>
+                </div>
+                <div className="col-md-5">
+                    <Add add={this.props.add} />
+                </div>
             </div>
         );
     }
